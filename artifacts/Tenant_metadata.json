@@ -1,0 +1,210 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "newId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "newAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "newServicePrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "newAptAddress",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "newConsorcioAddress",
+						"type": "address"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "tenantAddress",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "balance",
+						"type": "uint256"
+					}
+				],
+				"name": "EtherReceived",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "pricePaid",
+						"type": "uint256"
+					}
+				],
+				"name": "ExpensesPaid",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "addressBalance",
+						"type": "uint256"
+					}
+				],
+				"name": "WithdrawalSuccessful",
+				"type": "event"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "id",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "payExpenses",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "withdrawal",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdrawalAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"challenges/Consorcio/Tenant.sol": "Tenant"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"challenges/Consorcio/Tenant.sol": {
+			"keccak256": "0x4813818991abc087382e564985004489c51e77a167040689c8ddce7be042130a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a1b682de72d5e1bcff9a6c2e0d482766792ab16c2b2ec6e663a7253b01c5b953",
+				"dweb:/ipfs/QmZuCigmLdMw8HZs84g56UiX9uVGEZuCXgwL8Q1hkPvjWf"
+			]
+		},
+		"challenges/Consorcio/User.sol": {
+			"keccak256": "0x2ce03b4e3f1911e48c10922122b46f9baaa8c3f79c175512840acec6906776d5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9e52bc5e4099dc7cd1fff8591d36b100bc7e45f197155209650ac10fc658c400",
+				"dweb:/ipfs/QmV9TnzqaSNUNhbx6uGvCZfCptVSWLT5o5bazYB8Xz6NB8"
+			]
+		}
+	},
+	"version": 1
+}
